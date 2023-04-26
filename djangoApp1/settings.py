@@ -78,18 +78,13 @@ DATABASES = {
 
     'default': {
 
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-
-        'NAME': 'stock_manage',
-
-        'USER': 'postgres',
-
-        'PASSWORD': 'admin',
-
-        'HOST': 'localhost',
-
-        'PORT': '5432',
-
+        "ENGINE": "mssql",
+        "NAME": "bdd_django",
+        "USER": "sa",
+        "PASSWORD": "Roi50lopin#",
+        "HOST": "data",
+        "PORT": "1433",
+        "OPTIONS": {"driver": 'SQL Server Native Client 11.0'},
     }
 }
 
@@ -134,3 +129,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
